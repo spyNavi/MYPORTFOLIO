@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
   <header>
-    <h1>Welcome to My Portfolio</h1>
-      <a href="">  <button type="button">About</button>    </a>
-      <a href="">  <button type="button">Skills</button>   </a>
-      <a href="">  <button type="button">Projects</button> </a>
-      <a href="">  <button type="button">Contact</button>  </a>
+          <h1 class="heading">Welcome to My Portfolio</h1>
+     <div class="but">
+         <a href="#about">  <button type="button" class="b">About</button>    </a>
+         <a href="#skills">  <button type="button" class="b">Skills</button>   </a>
+         <a href="#projects">  <button type="button" class="b">Projects</button> </a>
+         <a href="#contact">  <button type="button" class="b">Contact</button>  </a>
+    </div>
   </header>
 
   <main>
 
     <section id="about">
+        
         <h3>Talupula Naveen</h3>
-        <img src="portfolio.png" width="500" height="500" alt="a photo of me">
-
-            <p>I am a passionate web developer with a focus on front-end technologies.</p>   
-            <p>I am currently Pursuing my B. Tech in <em>Mic College Of Technology</em> Kanchikacherla.</p>
-            <p>I have learnt Web Development from Code With Swaroop.</p>
-            <p>You can <strong>Click here</strong> to Checkout What I have learnt in HTML CSS JS.</p>
+        <div class="about-container">
+            <img src="portfolio.png" height="300px" alt="a photo of me">
+            <div class="about-text">
+                <p>I am a passionate web developer with a focus on front-end technologies.</p>   
+                <p>I am currently Pursuing my B. Tech in <em>Mic College Of Technology</em> Kanchikacherla.</p>
+                
+                <p>I have learnt Web Development from Code With Swaroop.</p>
+                <p>You can <strong>Click here</strong> to Checkout What I have learnt in HTML CSS JS.</p>
+            </div>
+        </div>
     </section>
 
     <section id="skills">
@@ -60,42 +68,53 @@
         <h1>Contact Me</h1>
         <p>Feel free to go to touch with me using the form below:</p>
         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-            <br>
-
-            <label for="email">Email:</label>
-            <input type="gmail" id="email">
-            <br>
-
-        <label>Choose your gender</label>
-            <input type="radio" id="male" value="male">
-            <label for="male">Male</label>
+            <div>  
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
             
-            <input type="radio" id="female" value="female">
-            <label for="female">Female</label>
-            <br>
+            <div>      
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
 
-        <label>Select your interests:</label>
-            <input type="checkbox" id="code" value="coding">
-            <label for="code">Coding</label>
-            
-            <input type="checkbox" id="read" value="reading">
-            <label for="read">Reading</label>
-            <br>
+            <div>            
+                <label>Choose your gender</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
 
-            <label for="bio">Bio (up to 200 characters):</label>
-            <input type="text" id="bio">
-            <br>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+
+            </div>
+
+            <div>  
+                <label>Select your interests:</label>
+                <input type="checkbox" id="code" value="coding">
+                <label for="code">Coding</label>
+        
+                <input type="checkbox" id="read" value="reading">
+                <label for="read">Reading</label>
+            </div>  
+
+            <div>              
+                <label for="bio">Bio (up to 200 characters):</label>
+                <input type="text" id="bio">
+            </div>
+                
             
-            <a href=""><button type="submit">Submit</button></a>
+            <button type="submit" class="submit">Submit</button>
         </form>
     </section>
 
   </main>
+    <a href="#">    
+        <button class="top">Top</button>
+    </a>
 
   <footer>
     <p>2025 My Portfolio</p>
+    
   </footer>
 
 </body>
